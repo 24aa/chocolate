@@ -25,7 +25,7 @@ Oooo000o = int ( O0O0OO0O0O0 . getSetting ( 'count' ) )
 IiIi11iIIi1Ii = O0O0OO0O0O0 . getSetting ( 'enable_meta' )
 Oo0O = xbmc . translatePath ( 'special://home/userdata/addon_data/' + OO0o )
 IiI = xbmc . translatePath ( os . path . join ( 'special://home/userdata/Database' , 'UKTurk.db' ) )
-ooOo = 'http://ukturk.offshorepastebin.com/ukturk2.jpg'
+ooOo = 'http://matsbuilds.uk/turk/ukturk2.jpg'
 Oo = 'https://www.googleapis.com/youtube/v3/search?q='
 o0O = '&regionCode=US&part=snippet&hl=en_US&key=AIzaSyAd-YEOqZz9nXVzGtn3KWzYLbLaajhqIDA&type=video&maxResults=50'
 IiiIII111iI = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId='
@@ -60,8 +60,8 @@ def Ooo0OO0oOO ( ) :
    if oO00oOo == 'true' :
     if OOOo0 <> '' :
      i1 ( o00 , Oo0oO0ooo , 1 , o0oOoO00o , O00ooooo00 )
- i1 ( 'Favourites' , IiI , 15 , 'http://ukturk.offshorepastebin.com/UKTurk/thumbs/new/Uk%20turk%20thumbnails%20favourites.jpg' , O00ooooo00 )
- i1 ( 'Search' , 'url' , 5 , 'http://ukturk.offshorepastebin.com/UKTurk/thumbs/new/Uk%20turk%20thumbnails%20search.jpg' , O00ooooo00 )
+ i1 ( 'Favourites' , IiI , 15 , 'http://matsbuilds.uk/turk/UKTurk/thumbs/new/Uk%20turk%20thumbnails%20favourites.jpg' , O00ooooo00 )
+ i1 ( 'Search' , 'url' , 5 , 'http://matsbuilds.uk/turk/UKTurk/thumbs/new/Uk%20turk%20thumbnails%20search.jpg' , O00ooooo00 )
  xbmc . executebuiltin ( 'Container.SetViewMode(500)' )
  if 98 - 98: I1111 * o0o0Oo0oooo0 / I1I1i1 * oO0 / IIIi1i1I
 def OOoOoo00oo ( url ) :
@@ -134,7 +134,7 @@ def o0 ( name , url , iconimage , fanart ) :
 def I1IIIii ( ) :
  O0O0OO0O0O0 . setSetting ( 'fav' , 'no' )
  Oo0oO0ooo = 'https://watchseries-online.pl/last-350-episodes'
- i1 ( 'New Episodes of TV Shows' , Oo0oO0ooo , 23 , 'http://ukturk.offshorepastebin.com/UKTurk/tv%20shows/Uk turk thumbnails new episodes tv shows1.jpg' , O00ooooo00 , description = '' )
+ i1 ( 'New Episodes of TV Shows' , Oo0oO0ooo , 23 , 'http://matsbuilds.uk/turk/UKTurk/tv%20shows/Uk turk thumbnails new episodes tv shows1.jpg' , O00ooooo00 , description = '' )
  if 56 - 56: OoO0O0o0Ooo
 def o0OO00oO ( url ) :
  O0O0OO0O0O0 . setSetting ( 'fav' , 'no' )
@@ -625,6 +625,8 @@ def O0O0o0oOOO ( string ) :
  return OOoOoOo
  if 66 - 66: I1II1 % i1iIIIiI1I + i11iIiiIii . O0O0O0O00OooO / i1I1i1Ii11 + i1iIIIiI1I
 def oOO0O00oO0Ooo ( name , url , mode , iconimage , itemcount , isFolder = False ) :
+ url = url . replace ( ' ' , '%20' )
+ iconimage = iconimage . replace ( ' ' , '%20' )
  if IiIi11iIIi1Ii == 'true' :
   if not 'COLOR' in name :
    ooo00Ooo = name . partition ( '(' )
@@ -665,6 +667,8 @@ def oOO0O00oO0Ooo ( name , url , mode , iconimage , itemcount , isFolder = False
   return Iii1
   if 10 - 10: I1Ii / I1Ii / ooOOOo0oo0O0 . ooOOOo0oo0O0
 def i1 ( name , url , mode , iconimage , fanart , description = '' ) :
+ url = url . replace ( ' ' , '%20' )
+ iconimage = iconimage . replace ( ' ' , '%20' )
  o0Oooo = sys . argv [ 0 ] + "?url=" + urllib . quote_plus ( url ) + "&mode=" + str ( mode ) + "&name=" + urllib . quote_plus ( name ) + "&description=" + str ( description ) + "&fanart=" + urllib . quote_plus ( fanart ) + "&iconimage=" + urllib . quote_plus ( iconimage )
  Iii1 = True
  oOOOoo00 = xbmcgui . ListItem ( name , iconImage = "DefaultFolder.png" , thumbnailImage = iconimage )
@@ -680,6 +684,8 @@ def i1 ( name , url , mode , iconimage , fanart , description = '' ) :
  return Iii1
  if 98 - 98: I1Ii / IIIi1i1I . I1II1 + IiIi1Iii1I1
 def iiIii ( name , url , mode , iconimage , fanart , description = '' ) :
+ url = url . replace ( ' ' , '%20' )
+ iconimage = iconimage . replace ( ' ' , '%20' )
  o0Oooo = sys . argv [ 0 ] + "?url=" + urllib . quote_plus ( url ) + "&mode=" + str ( mode ) + "&name=" + urllib . quote_plus ( name ) + "&description=" + str ( description ) + "&iconimage=" + urllib . quote_plus ( iconimage )
  Iii1 = True
  oOOOoo00 = xbmcgui . ListItem ( name , iconImage = "DefaultFolder.png" , thumbnailImage = iconimage )
@@ -692,6 +698,8 @@ def iiIii ( name , url , mode , iconimage , fanart , description = '' ) :
  return Iii1
  if 43 - 43: oO0 . OOoO000O0OO / i1iIIIiI1I
 def II111iiii ( name , url , mode , iconimage , fanart , description = '' ) :
+ url = url . replace ( ' ' , '%20' )
+ iconimage = iconimage . replace ( ' ' , '%20' )
  o0Oooo = sys . argv [ 0 ] + "?url=" + urllib . quote_plus ( url ) + "&mode=" + str ( mode ) + "&name=" + urllib . quote_plus ( name ) + "&description=" + str ( description ) + "&iconimage=" + urllib . quote_plus ( iconimage )
  Iii1 = True
  oOOOoo00 = xbmcgui . ListItem ( name , iconImage = "DefaultFolder.png" , thumbnailImage = iconimage )
