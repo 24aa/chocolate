@@ -109,7 +109,7 @@ def o0 ( name , url , iconimage , fanart ) :
  oooO0oo0oOOOO = O0oO ( url )
  ooooooO0oo ( oooO0oo0oOOOO )
  if '/UKTurk/TurkishTV.txt' in url : IIiiiiiiIi1I1 ( )
- if '/UKTurk/tv shows/Index.txt' in url : I1IIIii ( )
+ if '/UKTurk/tv%20shows/Index.txt' in url : I1IIIii ( )
  if 'Index' in url :
   oOoOooOo0o0 ( url )
  if 'XXX' in name : OOOO ( oooO0oo0oOOOO )
